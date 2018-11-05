@@ -1,0 +1,168 @@
+.main {
+    width: 100%;
+}
+
+.about {
+    width: 100%;
+    // border: 1px solid green;
+    height: 60vh;
+    background: $white;
+    &__container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        // border: 1px solid blue;
+        height: 100%;
+        background: $white;
+    }
+    &__title {
+        margin: 0 auto;
+        font-family: $headfont;
+        font-size: 42px;
+    }
+    &__text {
+        text-align: center;
+    }
+    &__button {
+        width: 20%;
+        height: 3rem;
+        text-align: center;
+        padding: 15px 0;
+        margin: 0 auto;
+        font-weight: bold;
+        
+    }
+}
+
+.blog {
+    width: 100%;
+    // border: 1px solid tomato;
+    height: 60vh;
+    &__blog-container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        position: relative;
+    }
+    &__image-box {
+        width: 50%;
+        display: inline;
+    }
+    &__image {
+        width: 50%;
+        position: absolute;
+        top: -1rem;
+        box-shadow: -150px 14px $secondary, 20px 14px $secondary;
+        object-fit: cover;
+    }
+    &__right-side {
+        position: absolute;
+        top: 109px;
+        right: 1rem;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+    &__button {
+        width: 30%;
+        height: 3rem;
+        text-align: center;
+        padding: 15px 0;
+        font-weight: bold;
+    }
+
+}
+
+.blog-two {
+    width: 100%;
+    // border: 1px solid green;
+    height: 43vh;
+    &__blog-container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+    }
+    &__image-box {
+        width: 50%;
+        display: inline;
+    }
+    &__image {
+        width: 50%;
+        position: absolute;
+        top: -1rem;
+        box-shadow: 150px -14px $primary, -20px -14px $primary;
+        object-fit: cover;
+    }
+    &__right-side {
+        position: absolute;
+        top: -2rem;
+        left: 1rem;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        text-align: right;
+    }
+    &__button {
+        width: 30%;
+        height: 3rem;
+        text-align: center;
+        padding: 15px 0;
+        font-weight: bold;
+        margin-left: 20rem;
+    }
+
+}
+
+
+.featured {
+    width: 100%;
+    // border: 1px solid purple;
+    height: 63vh;
+    background: $white;
+    &__featured-container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        padding-top: 4rem;
+        // flex-wrap: wrap;
+    }
+    &__right-side {
+        width: 60%;
+        margin-left: 8rem;
+        margin-top: 1rem;
+    }
+    &__title {
+        margin-bottom: 0;
+    }
+    &__image {
+       box-shadow: 20px 20px $secondary;
+    }
+    &__button {
+        width: 50%;
+        height: 3rem;
+        text-align: center;
+        padding: 13px 15px;
+        // margin: 0 auto;
+        font-weight: bold;
+    }
+}
+
+.gallery {
+    width: 100%;
+    height: 62vh;
+    // border: 1px solid orange;
+    &__container {
+        display: flex;
+        width: 80%;
+        margin: 60px auto;
+    }
+    &__image {
+        width: 33.33%;
+        margin: 1rem 1rem;
+    }
+}
