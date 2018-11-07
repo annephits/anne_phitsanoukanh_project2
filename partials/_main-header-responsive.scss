@@ -51,6 +51,12 @@
             width: 60%;
         }
     }
+
+    .featured {
+        &__image {
+            margin-top: 1rem;
+        }
+    }
 }
 
 // NETBOOKS & IPADS
@@ -115,10 +121,31 @@
             left: 6rem;
         }
     }
-    .header__main {
-        background: url("../assets/home-image-1.jpg") no-repeat;
+
+    .blog, .blog-two {
+        border: 1px solid red;
+        &__blog-container {
+            border: 1px solid yellow;
+            flex-direction: column;
+            width: 70%;
+        }
+
+
     }
 
+    .blog-two {
+        &__right-side {
+            margin-top: 2.5rem;
+        }
+    }
+
+    .featured {
+        border: 1px solid blue;
+        flex-direction: column;
+        &__container {
+            flex-direction: column;
+        }
+    }
 }
 
 
@@ -128,7 +155,53 @@
 @media (max-width: 960px){
     .title-container {
         border: 1px solid blue;
+        &__circle-text {
+            top: 14.5rem;
+            left: 6rem;
+        }
     }
+
+    .gallery {
+        border: 1px solid red;
+        &__container {
+            flex-direction: column;
+        }
+        &__image {
+            width: 100%;
+        }
+    }
+
+    .featured {
+        // flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+        // flex-wrap: nowrap;
+        &__featured-container {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__right-side {
+            width: 60%;
+        }
+        &__image {
+            
+        }
+    }
+       
+    .info {
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         flex-wrap: nowrap;
+        &__container, &__container-two {
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
 }
 
 
@@ -136,6 +209,10 @@
 @media (max-width: 800px){
     .title-container {
          border: 1px solid purple;
+        &__circle-text {
+            top: 13.5rem;
+            left: 6rem;
+        }
         &__profile {
                 &-image {
                 }
@@ -148,6 +225,10 @@
 @media (max-width: 768px){
     .title-container {
          border: 1px solid turquoise;
+         &__circle-text {
+            top: 13rem;
+            left: 5rem;
+        }
         &__profile {
                 &-image {
                 }
@@ -160,9 +241,28 @@
 @media (max-width: 720px){
     .title-container {
          border: 1px solid rebeccapurple;
+         &__wrapper {
+            margin-top: -1rem;
+            flex-direction: column;
+         }
+         &__circle-text {
+            top: 12rem;
+            left: 5rem;
+        }
         &__profile {
+            top: 3rem;
+            left: 3.5rem;
                 &-image {
+                    width:80%;
                 }
+        }
+        &__circle-text {
+            top: 4rem;
+            left: 17rem;
+        }
+        &__main-text {
+            position: relative;
+            top: 2rem;
         }
     }
 }
@@ -171,6 +271,24 @@
 @media (max-width: 640px){
     .title-container {
          border: 1px solid goldenrod;
+         &__circle-text {
+            top: 3.5rem;
+            left: 15rem;
+        }
+        &__profile {
+                &-image {
+                }
+        }
+    }
+}
+
+@media (max-width: 570px){
+    .title-container {
+         border: 1px solid goldenrod;
+         &__circle-text {
+            top: 3.5rem;
+            left: 13rem;
+        }
         &__profile {
                 &-image {
                 }
@@ -182,19 +300,15 @@
 @media (max-width: 480px){
     .title-container {
          border: 1px solid tomato;
+        &__circle-text {
+            top: 2.7rem;
+            left: 11rem;
          &__profile {
-             display: none;
+            //  display: none;
          }
-    
-    .header__main {
-        background: url("../assets/home-image-1.jpg") no-repeat;
-        background-size: auto;
-        // height: 100vh;
-    }
-    }
-    img {
 
     }
+}
 }
 
 
@@ -203,8 +317,11 @@
     .title-container {
          border: 1px solid mediumspringgreen;
         &__profile {
-                &-image {
-                }
+            top: 7rem;
+            right: 3rem;
+        }
+        &__circle-text, &__main-text {
+            display: none;
         }
     }
 }
