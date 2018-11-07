@@ -1,0 +1,73 @@
+// HEADER STYLING
+
+.contact-header {
+    background: url(../assets/contact-image-1.jpg);
+    background-position: bottom;
+    height: 50vh;
+}
+
+// MAIN STYLING
+
+.contact-main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 90px 0;
+    background: $white;
+  .wrapper {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+  }
+  .social {
+      width: 30%;
+      padding: 40px 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background: #fff;
+      &__menu {
+          display: flex;
+          justify-content: space-between;
+          width: 66.66%;
+          list-style: none;
+      }
+      &__icon {
+          font-size: 3rem;
+          color: $primary;
+          margin-left: -4rem;
+      }
+      &__email {
+          font-family: $basefont;
+          font-weight: 700;
+          text-decoration: none;
+          color: $black;
+          font-size: 24px;
+          text-transform: none;
+          margin: 25px 0;
+      }
+      &__phone, &__address,
+      &__city-prov, &__postal-code {
+          font-family: $basefont;
+          font-size: 24px;
+          font-weight: 400;
+          text-align: left;
+          text-transform: none;
+          text-decoration: none;
+          color: $black;
+      }
+      &__phone:hover, &__address:hover,
+      &__email:hover {
+           color: $accent;
+      }
+      &__city-prov, &__postal-code {
+          margin: 0;
+      }
+    }
+
+  .contact {
+      width: 66.66%;
+  }
+}
+

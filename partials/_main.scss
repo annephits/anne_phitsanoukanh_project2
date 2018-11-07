@@ -5,157 +5,170 @@
 .about {
     width: 100%;
     // border: 1px solid green;
-    height: 60vh;
     background: $white;
+    display: flex;
+    justify-content: center;
     &__container {
         width: 80%;
-        margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
+        align-items: flex-start;
+        margin: 125px auto;
         // border: 1px solid blue;
-        height: 100%;
-        background: $white;
     }
     &__title {
         margin: 0 auto;
         font-family: $headfont;
         font-size: 42px;
     }
-    &__text {
+    &__text,  &__button {
         text-align: center;
     }
     &__button {
-        width: 20%;
-        height: 3rem;
-        text-align: center;
-        padding: 15px 0;
-        margin: 0 auto;
-        font-weight: bold;
-        
+         margin: 0 auto;
     }
 }
 
+// BLOG PART ONE STYLING
+
 .blog {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    // border: 1px solid tomato;
-    height: 60vh;
+    // border: 1px solid tomato; 
     &__blog-container {
+        margin-bottom: 40px;
+        // border: 1px solid lime;
         width: 80%;
-        margin: 0 auto;
         display: flex;
-        position: relative;
     }
     &__image-box {
-        width: 50%;
-        display: inline;
+        width: 100%;
+        margin-left: -3rem;
     }
     &__image {
-        width: 50%;
-        position: absolute;
-        top: -1rem;
+        width: 100%;
+        position: relative;
+        top: -2rem;
         box-shadow: -150px 14px $secondary, 20px 14px $secondary;
         object-fit: cover;
     }
     &__right-side {
-        position: absolute;
-        top: 109px;
-        right: 1rem;
+        // border: 1px solid orange;
         display: flex;
         flex-direction: column;
-        width: 40%;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    &__title, &__text{
+        text-align: left;
+        // border: 1px solid yellow;
+        width: 80%;
     }
     &__button {
-        width: 30%;
-        height: 3rem;
+        width: 40%;
         text-align: center;
-        padding: 15px 0;
-        font-weight: bold;
+        display: relative;
+        margin-left: -13rem;
     }
 
 }
 
+
+// BLOG PART TWO STYLING
+
 .blog-two {
+    display: flex;
+    justify-content: center;
     width: 100%;
     // border: 1px solid green;
-    height: 43vh;
     &__blog-container {
+        margin-top: 40px;
         width: 80%;
-        margin: 0 auto;
         display: flex;
+        // border: 1px solid blue;
         flex-direction: row-reverse;
-        position: relative;
     }
     &__image-box {
-        width: 50%;
-        display: inline;
+        width: 100%;
+        margin-right: -3rem;
     }
     &__image {
-        width: 50%;
-        position: absolute;
-        top: -1rem;
+        width: 100%;
+        position: relative;
+        top: 2rem;
         box-shadow: 150px -14px $primary, -20px -14px $primary;
         object-fit: cover;
     }
     &__right-side {
-        position: absolute;
-        top: -2rem;
-        left: 1rem;
+        // border: 1px solid tomato;
         display: flex;
         flex-direction: column;
-        width: 40%;
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: .5rem;
+    }
+    &__title, &__text{
         text-align: right;
+        // border: 1px solid yellow;
+        width: 80%;
     }
     &__button {
-        width: 30%;
-        height: 3rem;
+        width: 40%;
         text-align: center;
-        padding: 15px 0;
-        font-weight: bold;
-        margin-left: 20rem;
+        display: relative;
+        margin-left: 13rem;
     }
 
 }
 
+// FEATURED STYLING
 
 .featured {
-    width: 100%;
     // border: 1px solid purple;
-    height: 63vh;
+    width: 100%;
     background: $white;
+    display: flex;
+    justify-content: center;
     &__featured-container {
+        // border: 1px solid tomato;
         width: 80%;
-        margin: 0 auto;
+        justify-content: space-between;
         display: flex;
-        padding-top: 4rem;
-        // flex-wrap: wrap;
+        margin: 100px auto;
     }
     &__right-side {
-        width: 60%;
-        margin-left: 8rem;
+        // border: 1px solid lime;
+        width: 70%;
+        margin-left: 9rem;
         margin-top: 1rem;
     }
     &__title {
+        margin-top: -1rem;
         margin-bottom: 0;
+    }
+    &__text {
+        margin-bottom: 5rem;
     }
     &__image {
        box-shadow: 20px 20px $secondary;
     }
-    &__button {
-        width: 50%;
-        height: 3rem;
-        text-align: center;
-        padding: 13px 15px;
-        // margin: 0 auto;
-        font-weight: bold;
-    }
 }
+
+// BANNER STYLING
+
+.banner__image {
+    width: 100vw;
+}
+
+// GALLERY STYLING
 
 .gallery {
     width: 100%;
-    height: 62vh;
-    // border: 1px solid orange;
     &__container {
         display: flex;
         width: 80%;
@@ -165,4 +178,60 @@
         width: 33.33%;
         margin: 1rem 1rem;
     }
+}
+
+// STYLING - SECTION: INFORMATION WITH CIRCLE ICONS
+
+.info {   
+    width: 100%;
+    background: $white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        // border: 1px solid tomato;
+        position: relative;
+        margin-top: 100px;
+    }
+    &__container-two {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        // border: 1px solid tomato;
+        position: relative;
+        margin-bottom: 100px;
+    }
+    &__photo-box, &__about-box,
+    &__blog-box, &__contact-box {
+        margin-top: 4rem;
+        width: 40%;
+    }
+}
+
+    // INFO SECTION ICON STYLING
+.icon, .icon-secondrow {
+        width:50px;
+        height:50px;
+        background-color: $accent;
+        border-radius:100%;
+        line-height: 60px;
+        text-align:center;
+        vertical-align:middle;
+        // display:inline-block;
+        margin-top: 2.5%;
+        margin-left: 2%;
+    }
+
+     
+i {
+    font-size: 20px;
+    color: $black;
+}
+
+.button {
+    align-self: center;
 }

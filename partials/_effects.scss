@@ -1,0 +1,18 @@
+// BUTTON EFFECTS
+
+.button:hover, {
+    box-shadow: 5px 5px black;
+}
+
+
+.nav__link:hover {
+    color: $accent;
+
+    &--selected:hover {
+    color: #fff;
+    }
+}
+
+i:hover {
+    font-size: 30px;
+}

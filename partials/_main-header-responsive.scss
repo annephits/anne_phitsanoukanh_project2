@@ -1,0 +1,210 @@
+
+
+// 15 INCH MACBOOK
+
+@media (max-width: 1440px){
+    .title-container {
+         border: 1px solid red;
+        &__circle-text {
+            left: 10rem;
+        }
+        &__profile {
+            left: 1.5rem;
+                &-image {
+                }
+        }
+    }
+}
+
+// SOME LAPTOPS
+
+@media (max-width: 1366px){
+    .title-container {
+         border: 1px solid orange;
+         &__circle-text {
+            top: 22rem;
+            left: 9rem;
+        }
+        &__profile {
+                &-image {
+                }
+        }
+    }
+}
+
+// MACBOOK AIR
+
+@media (max-width: 1280px){
+    .title-container {
+         border: 1px solid yellow;
+        &__circle-text {
+            top: 20rem;
+            left: 8rem;
+        }
+        &__profile {
+                &-image {
+                }
+        }
+    }
+    .nav {
+        &__container {
+            width: 60%;
+        }
+    }
+}
+
+// NETBOOKS & IPADS
+
+
+
+@media (max-width: 1190px){
+    .title-container {
+         border: 1px solid thistle;
+        &__circle-text {
+            top: 18rem;
+            left: 8rem;
+        }
+    }
+    .nav {
+        &__container {
+            width: 60%;
+        }
+    }
+}
+
+@media (max-width: 1070px){
+    .title-container {
+        border: 1px solid navy;
+        &__circle-text {
+            top: 18rem;
+            left: 7rem;
+        }
+        &__profile {
+                &-image {
+                }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 1070px){
+    .title-container {
+        border: 1px solid navy;
+        &__circle-text {
+            top: 18rem;
+            left: 7rem;
+        }
+        &__profile {
+                &-image {
+                }
+        }
+    }
+}
+
+
+@media (max-width: 1024px){
+    .nav {
+        display: none;
+    }
+    .title-container {
+        border: 1px solid green;
+        &__circle-text {
+            top: 17rem;
+            left: 6rem;
+        }
+    }
+    .header__main {
+        background: url("../assets/home-image-1.jpg") no-repeat;
+    }
+
+}
+
+
+
+// VARIOUS PHONES
+
+@media (max-width: 960px){
+    .title-container {
+        border: 1px solid blue;
+    }
+}
+
+
+
+@media (max-width: 800px){
+    .title-container {
+         border: 1px solid purple;
+        &__profile {
+                &-image {
+                }
+        }
+    }
+}
+
+
+
+@media (max-width: 768px){
+    .title-container {
+         border: 1px solid turquoise;
+        &__profile {
+                &-image {
+                }
+        }
+    }
+}
+
+
+
+@media (max-width: 720px){
+    .title-container {
+         border: 1px solid rebeccapurple;
+        &__profile {
+                &-image {
+                }
+        }
+    }
+}
+
+
+@media (max-width: 640px){
+    .title-container {
+         border: 1px solid goldenrod;
+        &__profile {
+                &-image {
+                }
+        }
+    }
+}
+
+
+@media (max-width: 480px){
+    .title-container {
+         border: 1px solid tomato;
+         &__profile {
+             display: none;
+         }
+    
+    .header__main {
+        background: url("../assets/home-image-1.jpg") no-repeat;
+        background-size: auto;
+        // height: 100vh;
+    }
+    }
+    img {
+
+    }
+}
+
+
+
+@media (max-width: 320px){
+    .title-container {
+         border: 1px solid mediumspringgreen;
+        &__profile {
+                &-image {
+                }
+        }
+    }
+}

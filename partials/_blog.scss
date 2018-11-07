@@ -1,0 +1,192 @@
+
+// BLOG HEADER STYLING
+.blog-header {
+        background: url(../assets/blog-image-1.jpg);
+        background-position: bottom;
+        height: 50vh;
+        position: relative;
+    }     
+
+  // BLOG NAV STYLING
+
+.nav-blog, .nav-contact {
+    background: $primary;
+    &__link {
+         text-transform: uppercase;
+         text-decoration: none;
+         color: #fff;
+         &--active {
+            color: $accent;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+}
+
+// BLOG TITLE STYLING
+.title-textwrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.title-text {
+  border: 1px solid yellow;
+  width: 80%;
+  color: #fff;
+  position: relative;
+  margin-top: 16.9%;
+  left: 165px;
+  font-size: 5vw;
+}
+
+@media (max-width: 1440px) {
+    .title-text {
+      margin-top: 16%;
+    }
+}
+// BLOG CONTAINER STYLING
+
+.blog-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: $white;
+    &__wrapper {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin: 100px auto;
+    }
+    // ASIDE
+    &__aside {
+        width: 30%;
+      .about {
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        padding: 38px;
+        margin-bottom: 15px;
+        &__heading {
+          font-size: 24px;
+          margin: 30px 0;
+        }
+        &__text {
+          margin-top: 0;
+          text-align: left;
+  
+        }
+        &__link {
+          font-size: 20px;
+          text-transform: none;
+          letter-spacing: normal;
+          font-weight: 700;
+          color: $secondary;
+          text-decoration: none;
+        }
+    
+      }
+
+      // RECENT POSTS
+      .recent-posts {
+        background: #fff;
+        padding: 38px;
+        &__heading {
+          font-size: 24px;
+          margin-bottom: 30px;
+        }
+        &__item {
+          display: list-item;
+          list-style-type: disc;
+          text-align: left;
+          padding-bottom: 2px;
+          margin-left: -40px;
+          line-height: 29px;
+          color: $black;
+        }
+        &__link {
+          color: $black;
+          font-size: 20px;
+          font-family: $basefont;
+          letter-spacing: 1px;
+          text-decoration: none;
+          text-transform: none;
+        }
+      }
+    }
+
+    // MAIN BLOG STYLING
+    &__main {
+      width: 66.66%;
+      .featured-blog {
+        background: #fff;
+        padding: 38px;
+        margin-bottom: 30px;
+        border-bottom: 5px solid $secondary;
+        &__heading {
+          font-size: 32px;
+        }
+      }
+      .blog-comments {
+        &__container {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          padding: 38px;
+          background: #fff;
+        }
+        &__container:first-child {
+          margin-bottom: 20px;
+        }
+        &__container:last-child {
+          border-bottom: 5px solid $secondary;
+          margin-bottom: 30px;
+        }
+        &__avatar {
+          width: 12%;
+        }
+        &__post {
+          width: 86%;
+        }
+        &__date, &__text {
+          margin: 0;
+        }
+      }
+    }
+}
+
+.blog-form, .contact-form {
+    display: flex;
+    flex-direction: column;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__name, &__email, &__comment, &__message {
+        font-family: $basefont;
+        font-size: 20px;
+        border: none;
+        &::placeholder {
+          color: $black;
+          opacity: 1;
+        }
+    }
+    &__name, &__email {
+        width: 50%;
+        padding: 30px 38px;
+    }
+    &__comment, &__message {
+        padding: 38px;
+        margin: 20px 0;
+      }
+}
+
+.submit {
+  background: $accent;
+  padding: 20px 50px;
+  font-family: $headfont;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}

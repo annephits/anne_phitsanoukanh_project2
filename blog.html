@@ -1,20 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
-    <title>Blog and News</title>
+    <title>Blog & News</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+    <link rel="icon" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-    <header class="header">
-        <div class="header__wrapper">
-            <nav class="header__nav">
+    <!--HAMBURGER MENU -->
+    <label>
+        <input type='checkbox'>
+        <span class='menu'>
+            <span class='hamburger'></span>
+        </span>
+        <ul>
+            <li>
+                <a href='#'>Home</a>
+            </li>
+            <li>
+                <a href='#'>About</a>
+            </li>
+            <li>
+                <a href="./blog.html">Blog</a>
+            </li>
+            <li>
+                <a href='#'>Contact</a>
+            </li>
+        </ul>
+    </label>
+    
+    <!-- HEADER -->
+    <header class="header blog-header">     
+            <!-- NAVIGATION -->
+            <nav class="nav nav-blog">
                 <ul class="nav__container">
-                    <li class="nav__item"><a href="http://"></a></li>
+                    <li class="nav__item">
+                        <a class="link nav__link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="link nav__link" href="#">About</a>
+                    </li>
+                    <li class="nav__item--selected">
+                        <a class="link nav__link" href="#">Willow</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="link nav__link--active" href="./blog.html">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="link nav__link" href="./contact.html">Contact</a>
+                    </li>
                 </ul>
             </nav>
-        </div>
+        <!-- TITLE -->
+            <div class="title-textwrapper">
+                <h2 class="title-text blog-header__text">Blog & News</h2>
+            </div>
     </header>
+    
+
+    <!-- MAIN -->
+    <main class="blog-container">
+        <div class="blog-container__wrapper">
+            <!-- ASIDE-->
+            <aside class="blog-container__aside">
+                <div class="about">
+                    <img src="./assets/blog-image-2.jpg" class="about__image" alt="">
+                    <h3 class="about__heading">About Willow</h3>
+                    <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolore labore temporibus. Quos veniam dolorem eaque doloribus. <a href="" class="about__link">Find out more.</a></p>
+                </div>
+                <div class="recent-posts">
+                    <h3 class="recent-posts__heading">Recent Posts</h3>
+                    <ul class="recent-posts__list">
+                        <li class="recent-posts__item"><a href="" class="recent-posts__link">Donec facilisis tortor ut</a></li>
+                        <li class="recent-posts__item"><a href="" class="recent-posts__link">Augue lacinia at viverra</a></li>
+                        <li class="recent-posts__item"><a href="" class="recent-posts__link">Semper sed sapien metus</a></li>
+                        <li class="recent-posts__item"><a href="" class="recent-posts__link">Scelerisque nec pharetra
+                                id</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- MAIN BLOG -->
+            <section class="blog-container__main">
+                <!-- FEATURED POST BEGINS -->
+                <div class="featured-blog">
+                    <h3 class="featured-blog__heading">My Favourite Travel Destinations</h3>
+                    <p class="featured-blog__date">Monday October 8th, 2018 by Willow</p>
+                    <p class="featured-blog__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro distinctio, excepturi facere optio nihil dolores laudantium modi ut quos aperiam delectus amet ex, doloremque debitis dolorum vero maiores. Quaerat, quam.</p>
+                    <p class="featured-blog__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam maiores repellendus nobis dicta ea ipsa a necessitatibus nulla perspiciatis? In culpa natus amet ipsa vero? Blanditiis ut ad aliquid autem.</p>
+                    <p class="featured-blog__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iste ipsa architecto, cum, quo id ab ratione illo velit saepe impedit commodi repellendus dolores adipisci magni animi incidunt repudiandae beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, sunt. Quaerat quia recusandae similique quos corporis eaque saepe consequuntur possimus placeat ex? Tenetur accusamus deserunt alias, rem saepe eveniet porro. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis aspernatur eveniet ex distinctio fuga natus, obcaecati rem perspiciatis totam dolore rerum consequatur? Modi eos fuga eum perferendis eligendi nostrum quae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, non dicta magni fuga illo perferendis dolore exercitationem repellat suscipit. In incidunt architecto expedita delectus possimus voluptatibus voluptatem neque soluta earum!</p>
+                    <p class="featured-blog__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aspernatur ipsa porro, eveniet molestiae nobis magnam, voluptatem, id cupiditate minima accusamus saepe nam! Sapiente provident officia ea praesentium porro autem.</p>
+                    <p class="featured-blog__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, deserunt rerum vero pariatur magnam delectus totam voluptate id consequuntur? Repudiandae, nihil. Deleniti officia optio voluptatem adipisci itaque quia fugit atque. </p>
+                    <p class="featured-blog__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure autem minima rerum. Dolore dignissimos asperiores animi, recusandae modi possimus at iste obcaecati doloremque expedita, aspernatur magnam molestias quas impedit quia lorem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere odit, sit quas saepe ratione a laborum error vitae ab praesentium cumque exercitationem cupiditate placeat reiciendis enim nemo quibusdam, corrupti quidem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam neque ipsum vel rem fugiat repudiandae praesentium iste facilis, dolorum laborum labore sapiente. Perferendis incidunt, odit quam nisi architecto sit. Repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, cum? Accusantium dolore eos saepe ipsam corrupti est facere voluptatum cupiditate, mollitia ullam sit dolorum dolorem officia id, explicabo obcaecati quibusdam.</p>
+                </div>
+           
+                <!-- COMMENTS -->
+                <div class="blog-comments">
+                    <div class="blog-comments__container">
+                        <img src="./assets/blog-image-3.jpg" class="blog-comments__avatar" alt="">
+                        <div class="blog-comments__post">
+                            <p class="blog-comments__date">Tuesday October 9th, 2018 by Barb</p>
+                            <p class="blog-comments__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus magni itaque saepe illo quo eos qui unde laborum, nisi, laudantium odit! Ipsa omnis tenetur dignissimos placeat esse ea possimus eveniet.</p>
+                        </div>
+                    </div>
+                    <div class="blog-comments__container">
+                        <img src="./assets/blog-image-4.jpg" class="blog-comments__avatar" alt="">
+                        <div class="blog-comments__post">
+                            <p class="blog-comments__date">Wednesday October 10th, 2018 by Daisy</p>
+                            <p class="blog-comments__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nobis accusamus aperiam molestias reprehenderit in fugiat a beatae optio necessitatibus consequatur, suscipit temporibus vero odio sapiente modi molestiae ex dolor.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FORM -->
+            
+                    <form action="" method="post" class="form blog-form">
+                        <div class="blog-form__top">
+                            <label for="name" class="visuallyhidden">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Name" class="blog-form__name">
+                            <label for="email" class="visuallyhidden">Email address</label>
+                            <input type="email" id="email" name="email" required placeholder="Email address" class="blog-form__email">
+                        </div>
+                        <label for="comment" class="visuallyhidden">Comment</label>
+                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment" class="blog-form__comment"></textarea>
+                        <input class="submit" type="submit" value="Post comment">
+                    </form>
+         
+       
+            </section>
+    
+        </div>
+    </main>
+
+
+
+    <!-- FOOTER-->
+    <footer class="footer">
+        <p class="footer__text">Copyright &copy; 2018 HackerYou</p>
+    </footer>
+
 </body>
+
 </html>
